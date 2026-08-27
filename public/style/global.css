@@ -1,0 +1,12 @@
+body{
+    font-family: 'Lato';
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:active, a:link {
+    color: inherit;
+
+}

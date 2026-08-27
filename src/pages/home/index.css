@@ -1,0 +1,476 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+
+
+header {
+    padding: 15px 8%;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+
+
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color: #1f4e79;
+    color: #ffffff
+}
+
+#inicio > .inicio-conteudo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.inicio-texto {
+    flex: 1;
+}
+
+.inicio-imagem {
+    flex: 1;
+}
+
+.inicio-imagem img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+#inicio h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+#inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#inicio a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 28px;
+    background-color: #ffffff;
+    color: #1f4e79;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+#inicio > div > p:first-child {
+    color: #b8d8f0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+
+
+#sobre {
+    background-color: #f5f7fa;
+}
+
+#sobre > div {
+    max-width: 900px;
+}
+
+#sobre h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+#sobre p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+
+#servicos > div > div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#servicos article {
+    flex: 1 1 220px;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+#servicos h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#servicos article h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#servicos article p {
+    line-height: 1.6;
+}
+
+
+
+#processo {
+    background-color: #f5f7fa;
+}
+
+#processo > div > div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#processo article {
+    flex: 1 1 200px;
+    padding: 25px;
+}
+
+#processo article span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background-color: #1f4e79;
+    color: #ffffff;
+
+    font-weight: 700;
+}
+
+#processo h2 {
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+#processo h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+#processo p {
+    line-height: 1.6;
+}
+
+
+
+#solucoes > div > div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#solucoes article {
+    flex: 1 1 280px;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+#solucoes h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#solucoes article h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#solucoes article p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#solucoes article a {
+    font-weight: 700;
+    color: #1f4e79;
+}
+
+
+
+#diferenciais {
+    background-color: #f5f7fa;
+}
+
+#diferenciais > div > div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#diferenciais article {
+    flex: 1 1 220px;
+    padding: 25px;
+}
+
+#diferenciais article h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#diferenciais article p {
+    line-height: 1.6;
+}
+
+
+#contato {
+    background-color: #ffffff;
+}
+
+#contato > div {
+    max-width: 800px;
+}
+
+#contato h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#contato > div > p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contato form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contato label {
+    font-weight: 700;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+#contato textarea {
+    resize: vertical;
+}
+
+#contato button {
+    align-self: flex-start;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1f4e79;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+#faq {
+    background-color: #f5f7fa;
+}
+
+#faq > div {
+    max-width: 900px;
+}
+
+#faq h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+#faq details {
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+#faq summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#faq details p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+
+
+footer {
+    padding: 40px 8%;
+    background-color: #1f2933;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 60px 6%;
+    }
+
+    header {
+        padding: 15px 6%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #inicio {
+        min-height: 70vh;
+    }
+
+    #inicio h1 {
+        font-size: 38px;
+    }
+
+    #inicio p {
+        font-size: 16px;
+    }
+
+    #sobre h2,
+    #servicos h2,
+    #processo h2,
+    #solucoes h2,
+    #contato h2,
+    #faq h2 {
+        font-size: 30px;
+    }
+
+    #servicos > div > div,
+    #processo > div > div,
+    #solucoes > div > div,
+    #diferenciais > div > div {
+        flex-direction: column;
+    }
+
+    #servicos article,
+    #processo article,
+    #solucoes article,
+    #diferenciais article {
+        flex: 1 1 auto;
+    }
+
+    #contato input,
+    #contato textarea {
+        font-size: 16px;
+    }
+    #inicio > .inicio-conteudo {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .inicio-texto,
+    .inicio-imagem {
+        width: 100%;
+    }
+
+    .inicio-imagem img {
+        width: 100%;
+    }
+
+}
+
+
+section > div > p:first-child {
+    color: #1f4e79;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+#servicos article,
+#solucoes article {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#servicos article:hover,
+#solucoes article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
